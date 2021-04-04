@@ -9,10 +9,13 @@ const createMenuPage = () => {
   menuItem.classList.add('menu-item');
 
   const menuItemImg = document.createElement('img');
-  
+  menuItemImg.classList.add('menu-item-img');
+
   const menuItemTitle = document.createElement('h3');
+  menuItemTitle.classList.add('menu-item-title');
 
   const menuItemDescription = document.createElement('p');
+  menuItemDescription.classList.add('menu-item-description');
 
   return menuPage;
 }
