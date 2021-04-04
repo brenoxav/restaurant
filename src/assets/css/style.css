@@ -68,7 +68,7 @@ font-family: -apple-system, BlinkMacSystemFont,
 }
 
 #content {
-  padding-top: var(--navbar-height);
+  /* padding-top: var(--navbar-height); */
 }
 
 .navbar {
@@ -85,17 +85,36 @@ font-family: -apple-system, BlinkMacSystemFont,
   justify-content: center;
   align-items: center;
   flex: 1;
+  padding: 2rem;
+  border: 2px solid #fff;
+  border-left: none;
   text-align: center;
-  border: 1px solid #fff;
-  background-color: #ccc;
+  font-size: 1.5rem;
+  font-weight: bold;
+  
+  background-color: #fffc;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  text-decoration: underline;
+}
+
+.nav-btn-active {
+  border-bottom: none;
+  text-shadow: 0 0 .5rem #222c;
+  color: #fff;
+  background-color: transparent;
 }
 
 .home-page {
-  min-height: calc(100vh - var(--navbar-height));
+  min-height: 100vh;
   background-image: linear-gradient(#0000, #0008), url('/src/assets/images/bg-home.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border: 2px solid #fff;
+  border-top: none;
 }
 
 .home-wrapper {
@@ -103,7 +122,8 @@ font-family: -apple-system, BlinkMacSystemFont,
 }
 
 .home-heading {
-  padding: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
   text-align: center;
   font-family: 'Lobster Two', cursive;
   font-size: 6rem;
@@ -117,4 +137,17 @@ font-family: -apple-system, BlinkMacSystemFont,
   font-size: 2rem;
   text-shadow: 0 0 .5rem #222c;
   color: #fff;
+}
+
+.home-order-btn {
+  margin-top: 6rem;
+  padding: .5rem 1rem;
+  border: 2px solid #fff;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.home-order-btn:hover {
+  background-color: #f02;
 }

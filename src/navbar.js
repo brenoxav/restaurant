@@ -3,7 +3,7 @@ const createNavbar = () => {
   navbar.classList.add('navbar')
 
   const navBtnHome = document.createElement('div');
-  navBtnHome.classList.add('nav-btn');
+  navBtnHome.classList.add('nav-btn', 'nav-btn-active');
   navBtnHome.textContent = 'Home';
 
   const navBtnMenu = document.createElement('div');

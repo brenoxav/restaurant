@@ -11,11 +11,17 @@ const createHomePage = () => {
 
   const homeDescription = document.createElement('p');
   homeDescription.classList.add('home-description');
-  homeDescription.textContent = 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.';
+  homeDescription.textContent = "The best traditional, wood-fired pizza recipe in town: from our family to yours";
+
+  const homeOrderBtn = document.createElement('a');
+  homeOrderBtn.classList.add('home-order-btn');
+  homeOrderBtn.textContent = 'Order now';
+  //TODO: SET BUTTON HREF TO MENU PAGE
 
   homePage.appendChild(homeWrapper)
   homeWrapper.appendChild(homeHeading);
   homeWrapper.appendChild(homeDescription);
+  homeWrapper.appendChild(homeOrderBtn);
 
   return homePage;
 }
