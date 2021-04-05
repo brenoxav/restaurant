@@ -161,6 +161,33 @@ font-family: -apple-system, BlinkMacSystemFont,
   background-color: #444;
 }
 
+.menu-wrapper {
+  flex-wrap: wrap;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+.menu-item {
+  width: 240px;
+  margin: .5rem;
+  padding: .5rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.menu-item-img {
+  width: 100%;
+}
+
+.menu-item-title, .menu-item-description {
+  padding-top: .5rem;
+}
+
+.menu-item-title {
+  font-weight: bold;
+}
+
 /* CONTACT PAGE */
 .contact-page {
   background-image: linear-gradient(#000c, #0000), url('/src/assets/images/bg-home-2.jpg');

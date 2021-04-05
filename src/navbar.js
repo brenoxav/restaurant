@@ -7,11 +7,11 @@ const createNavbar = () => {
   navBtnHome.textContent = 'Home';
 
   const navBtnMenu = document.createElement('div');
-  navBtnMenu.classList.add('nav-btn');
+  navBtnMenu.classList.add('nav-btn', 'nav-btn-active');
   navBtnMenu.textContent = 'Menu';
 
   const navBtnContact = document.createElement('div');
-  navBtnContact.classList.add('nav-btn', 'nav-btn-active');
+  navBtnContact.classList.add('nav-btn');
   navBtnContact.textContent = 'Contact';
 
   navbar.appendChild(navBtnHome);
