@@ -1,6 +1,6 @@
 const createHomePage = () => {
   const homePage = document.createElement('div');
-  homePage.classList.add('home-page');
+  homePage.classList.add('home-page', 'full-h');
 
   const homeWrapper = document.createElement('div');
   homeWrapper.classList.add('home-wrapper', 'd-flex', 'flex-col');
@@ -18,10 +18,10 @@ const createHomePage = () => {
   homeOrderBtn.textContent = 'Order now';
   //TODO: SET BUTTON HREF TO MENU PAGE
 
-  homePage.appendChild(homeWrapper)
   homeWrapper.appendChild(homeHeading);
   homeWrapper.appendChild(homeDescription);
   homeWrapper.appendChild(homeOrderBtn);
+  homePage.appendChild(homeWrapper);
 
   return homePage;
 }

@@ -67,10 +67,15 @@ font-family: -apple-system, BlinkMacSystemFont,
   flex-direction: column;
 }
 
+.full-h {
+  min-height: 100vh;
+}
+
 #content {
   /* padding-top: var(--navbar-height); */
 }
 
+/* NAVBAR */
 .navbar {
   position: fixed;
   top: 0;
@@ -91,7 +96,7 @@ font-family: -apple-system, BlinkMacSystemFont,
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
-  
+  color: #222;
   background-color: #fffc;
   cursor: pointer;
 }
@@ -107,14 +112,13 @@ font-family: -apple-system, BlinkMacSystemFont,
   background-color: transparent;
 }
 
+/* HOME PAGE */
 .home-page {
-  min-height: 100vh;
   background-image: linear-gradient(#0000, #0008), url('/src/assets/images/bg-home.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border: 2px solid #fff;
-  border-top: none;
 }
 
 .home-wrapper {
@@ -150,4 +154,37 @@ font-family: -apple-system, BlinkMacSystemFont,
 
 .home-order-btn:hover {
   background-color: #f02;
+}
+
+/* MENU PAGE */
+.menu-page {
+  background-color: #444;
+}
+
+/* CONTACT PAGE */
+.contact-page {
+  background-image: linear-gradient(#000c, #0000), url('/src/assets/images/bg-home-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid #fff;
+}
+
+.contact-wrapper {
+  max-width: 75%;
+  padding-top: 12rem;
+  margin: 0 auto;
+}
+
+.contact-info {
+  max-width: 75%;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  text-shadow: 0 0 .5rem #222c;
+  color: #fff;
+}
+
+.contact-map {
+  align-self: center;
+  margin: 4rem 0;
 }

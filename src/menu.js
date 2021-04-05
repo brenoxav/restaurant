@@ -1,9 +1,9 @@
 const createMenuPage = () => {
   const menuPage = document.createElement('div');
-  menuPage.classList.add('menu-page');
+  menuPage.classList.add('menu-page', 'full-h');
 
   const menuWrapper = document.createElement('div');
-  menuWrapper.classList.add('menu-wrapper');
+  menuWrapper.classList.add('menu-wrapper', 'd-flex');
 
   const menuItem = document.createElement('div');
   menuItem.classList.add('menu-item');

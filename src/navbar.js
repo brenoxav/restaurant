@@ -3,7 +3,7 @@ const createNavbar = () => {
   navbar.classList.add('navbar')
 
   const navBtnHome = document.createElement('div');
-  navBtnHome.classList.add('nav-btn', 'nav-btn-active');
+  navBtnHome.classList.add('nav-btn');
   navBtnHome.textContent = 'Home';
 
   const navBtnMenu = document.createElement('div');
@@ -11,7 +11,7 @@ const createNavbar = () => {
   navBtnMenu.textContent = 'Menu';
 
   const navBtnContact = document.createElement('div');
-  navBtnContact.classList.add('nav-btn');
+  navBtnContact.classList.add('nav-btn', 'nav-btn-active');
   navBtnContact.textContent = 'Contact';
 
   navbar.appendChild(navBtnHome);
