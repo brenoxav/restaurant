@@ -1,34 +1,41 @@
+import menuPizza1 from './assets/images/menu-pizza-1.jpg';
+import menuPizza2 from './assets/images/menu-pizza-2.jpg';
+import menuPizza3 from './assets/images/menu-pizza-3.jpg';
+import menuPizza4 from './assets/images/menu-pizza-4.jpg';
+import menuPizza5 from './assets/images/menu-pizza-5.jpg';
+import menuPizza6 from './assets/images/menu-pizza-6.jpg';
+
 const createMenuPage = () => {
   const menuItems = [
     {
       title: 'Tomato & Mozzarella',
       description: 'Pizza dough, tomato sauce, mozzarella cheese, tomato cubes, oregano.',
-      image_url: '/src/assets/images/menu-pizza-1.jpg',
+      image_url: menuPizza1,
     },
     {
       title: 'Margherita',
       description: 'Pizza dough, tomato sauce, mozzarella cheese, tomato slices, basil leaves.',
-      image_url: '/src/assets/images/menu-pizza-2.jpg',
+      image_url: menuPizza2,
     },
     {
       title: 'Basic',
       description: 'Pizza dough, tomato sauce, mozzarella cheese, oregano.',
-      image_url: '/src/assets/images/menu-pizza-3.jpg',
+      image_url: menuPizza3,
     },
     {
       title: 'Italian',
       description: 'Pizza dough, tomato sauce, mozzarella cheese, bell pepper, corn, olives, oregano.',
-      image_url: '/src/assets/images/menu-pizza-4.jpg',
+      image_url: menuPizza4,
     },
     {
       title: 'Pepperoni & Meat',
       description: 'Pizza dough, tomato sauce, mozzarella cheese, pepperoni slices, meat cubes.',
-      image_url: '/src/assets/images/menu-pizza-5.jpg',
+      image_url: menuPizza5,
     },
     {
       title: 'Fiesta',
       description: 'Pizza dough, tomato sauce, mozzarella cheese, tomato cubes, champignon, olives.',
-      image_url: '/src/assets/images/menu-pizza-6.jpg',
+      image_url: menuPizza6,
     },
   ];
 
