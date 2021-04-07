@@ -1,22 +1,15 @@
 const createNavbar = () => {
+  const tabNames = ['home', 'menu', 'contact'];
+
   const navbar = document.createElement('nav');
-  navbar.classList.add('navbar')
+  navbar.classList.add('navbar');
 
-  const navBtnHome = document.createElement('div');
-  navBtnHome.classList.add('nav-btn');
-  navBtnHome.textContent = 'Home';
-
-  const navBtnMenu = document.createElement('div');
-  navBtnMenu.classList.add('nav-btn', 'nav-btn-active');
-  navBtnMenu.textContent = 'Menu';
-
-  const navBtnContact = document.createElement('div');
-  navBtnContact.classList.add('nav-btn');
-  navBtnContact.textContent = 'Contact';
-
-  navbar.appendChild(navBtnHome);
-  navbar.appendChild(navBtnMenu);
-  navbar.appendChild(navBtnContact);
+  tabNames.forEach((tabName) => {
+    let tab = document.createElement('div');
+    tab.classList.add('nav-btn');
+    tab.textContent = tabName.toUpperCase();
+    navbar.appendChild(tab);
+  });
 
   return navbar;
 }
