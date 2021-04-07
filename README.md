@@ -37,7 +37,7 @@ To get a local copy up and running follow these steps:
 restaurant
 ```
 
-- Open the `index.html` file with your preferred browser
+- Open the `index.html` file on your preferred browser
 ```
 /dist/index.html
 ```

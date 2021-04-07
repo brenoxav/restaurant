@@ -71,10 +71,6 @@ font-family: -apple-system, BlinkMacSystemFont,
   min-height: 100vh;
 }
 
-#content {
-  /* padding-top: var(--navbar-height); */
-}
-
 /* NAVBAR */
 .navbar {
   position: fixed;
@@ -153,12 +149,16 @@ font-family: -apple-system, BlinkMacSystemFont,
 }
 
 .home-order-btn:hover {
-  background-color: #f02;
+  background-color: #484;
 }
 
 /* MENU PAGE */
 .menu-page {
-  background-color: #444;
+  background-image: linear-gradient(#0008, #0000), url('/src/assets/images/bg-menu.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid #fff;
 }
 
 .menu-wrapper {
@@ -190,7 +190,7 @@ font-family: -apple-system, BlinkMacSystemFont,
 
 /* CONTACT PAGE */
 .contact-page {
-  background-image: linear-gradient(#000c, #0000), url('/src/assets/images/bg-home-2.jpg');
+  background-image: linear-gradient(#0008, #0000), url('/src/assets/images/bg-contact.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -199,19 +199,21 @@ font-family: -apple-system, BlinkMacSystemFont,
 
 .contact-wrapper {
   max-width: 75%;
-  padding-top: 12rem;
+  padding-top: 8rem;
   margin: 0 auto;
 }
 
 .contact-info {
   max-width: 75%;
   padding-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-shadow: 0 0 .5rem #222c;
   color: #fff;
 }
 
 .contact-map {
   align-self: center;
+  width: 100%;
+  height: 360px;
   margin: 4rem 0;
 }
