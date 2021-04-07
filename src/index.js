@@ -1,9 +1,9 @@
-import './assets/css/style.css'
+import './assets/css/style.css';
 
-import { createNavbar } from './navbar'
-import { createHomePage } from './home'
-import { createMenuPage } from './menu'
-import { createContactPage } from './contact'
+import createNavbar from './navbar';
+import createHomePage from './home';
+import createMenuPage from './menu';
+import createContactPage from './contact';
 
 const content = document.querySelector('#content');
 content.appendChild(createNavbar());
@@ -16,14 +16,13 @@ const navButtons = document.querySelectorAll('.nav-btn');
 
 const changeTab = (btnText) => {
   navButtons.forEach((navBtn) => {
-    if(navBtn.textContent.toLowerCase() == btnText.toLowerCase()) {
+    if (navBtn.textContent.toLowerCase() === btnText.toLowerCase()) {
       navBtn.classList.add('nav-btn-active');
-    }
-    else {
+    } else {
       navBtn.classList.remove('nav-btn-active');
     }
   });
-}
+};
 
 const loadPage = (btnText) => {
   switch (btnText.toLowerCase()) {
@@ -41,15 +40,14 @@ const loadPage = (btnText) => {
       break;
   }
   changeTab(btnText);
-}
+};
 
 navButtons.forEach((navBtn) => {
   navBtn.addEventListener('click', (event) => {
-    let btnText = event.target.textContent.toLowerCase();
+    const btnText = event.target.textContent.toLowerCase();
     mainContainer.innerHTML = '';
     loadPage(btnText);
   });
 });
 
-mainContainer.appendChild(createHomePage());
-changeTab('home');
+loadPage('home');

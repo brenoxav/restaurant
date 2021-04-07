@@ -5,13 +5,13 @@ const createNavbar = () => {
   navbar.classList.add('navbar');
 
   tabNames.forEach((tabName) => {
-    let tab = document.createElement('div');
+    const tab = document.createElement('div');
     tab.classList.add('nav-btn');
     tab.textContent = tabName.toUpperCase();
     navbar.appendChild(tab);
   });
 
   return navbar;
-}
+};
 
-export { createNavbar }
+export default createNavbar;
